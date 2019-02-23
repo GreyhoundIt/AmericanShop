@@ -12,3 +12,26 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.thumbnail{
+  background-color: $maincolor;
+  img{
+    max-height: 300px;
+    min-height: 300px;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  .btn{
+    margin-left: 10px;
+  }
+}
+
+
+
+.btn-form {
+  margin-top:20px;
+}
+
+.btn-index {
+  margin-top:50px;
+}
