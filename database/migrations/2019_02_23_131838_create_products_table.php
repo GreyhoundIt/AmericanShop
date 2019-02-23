@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->integer('category_id')->unsigned()->index();
             $table->string('name', 255);
             $table->text('description');
-            $table->tinyInteger('price');
+            $table->unsignedTinyInteger('price');
             $table->string('imageurl');
             $table->string('slug',255);
             $table->string('part_number');
