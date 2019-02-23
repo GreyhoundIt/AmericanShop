@@ -8,4 +8,12 @@ class Category extends Model
 {
     protected $fillable = ['name', 'description' ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
 }
