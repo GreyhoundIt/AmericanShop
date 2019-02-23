@@ -12,4 +12,9 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function presentPrice()
+    {
+        return "£" . number_format( $this->price /100 ,2);
+    }
 }

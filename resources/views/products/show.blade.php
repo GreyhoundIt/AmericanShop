@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">{{$product->name}}</h1>
-                <img src="{{ $product->imageurl }}" alt="{{ $product->name }}" class="card-img-top">
+                    <img src="{{ $product->imageurl }}" alt="{{ $product->name }}" class="card-img-top">
               </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $product->name  }}</h5>
                     <p class="card-text"> {{ $product->description }}</p>
-                    <h6 class="card-tesxt">{{ $product->price }}</h6>
+                    <h6 class="card-text">{{ $product->presentPrice() }}</h6>
                 </div>
             </div>
         </div>

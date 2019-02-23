@@ -10655,23 +10655,32 @@ a.text-dark:focus {
   }
 }
 
+nav {
+  background-color: #b66e14;
+}
+
+.container {
+  padding-top: 100px;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.thumbnail {
+.product-card {
   background-color: #b66e14;
+  margin-bottom: 20px;
 }
 
-.thumbnail img {
-  max-height: 300px;
-  min-height: 300px;
-  min-width: 300px;
-  margin-top: 20px;
+.product-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 360px;
+  height: 300px;
 }
 
-.thumbnail .btn {
+.product-card .btn {
   margin-left: 10px;
 }
 

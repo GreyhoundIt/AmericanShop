@@ -15,4 +15,5 @@ use App\Http\Controllers\ProductsController;
 
 use Illuminate\Support\Facades\Route;
 
-Route::resource('products', 'ProductsController');
+Route::get('categories/{slug}', 'CategoriesController@show')->name('categories.show');
+Route::get('products/{id}', 'ProductsController@show')->name('products.show');

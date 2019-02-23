@@ -8,18 +8,26 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+nav {
+  background-color: $maincolor ;
+}
+
+.container{
+  padding-top:100px;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.thumbnail{
+.product-card{
   background-color: $maincolor;
+  margin-bottom: 20px;
   img{
-    max-height: 300px;
-    min-height: 300px;
-    min-width: 300px;
-    margin-top: 20px;
+    object-fit: cover;
+    width:360px;
+    height:300px;
   }
   .btn{
     margin-left: 10px;
