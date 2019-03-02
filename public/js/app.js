@@ -1780,11 +1780,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      body: 'Temporary Message'
-    };
+  props: ['product'],
+  methods: {
+    formatPrice: function formatPrice(value) {
+      var pounds = value / 100;
+      return "£" + pounds.toLocaleString("en-UK", {
+        sytle: "currency",
+        currency: "GBP",
+        minimumFractionDigits: 2
+      });
+    }
   }
 });
 
@@ -36828,8 +36837,45 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "col-md-4" }, [
+    _c("div", { staticClass: "product-card" }, [
+      _c("img", {
+        class: "shake-slow",
+        attrs: { src: _vm.product.imageurl, alt: _vm.product.name }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "caption" }, [
+        _c("h3", { domProps: { textContent: _vm._s(_vm.product.name) } }),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(_vm._s(_vm.product.description.substring(0, 150) + "..."))
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "cta" }, [
+          _c("span", { staticClass: "price" }, [
+            _vm._v(_vm._s(_vm.formatPrice(_vm.product.price)) + " ")
+          ]),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-primary pull-right",
+              attrs: { href: "/products/" + _vm.product.id, role: "button" }
+            },
+            [_vm._v("See More")]
+          )
+        ])
+      ])
+    ])
+  ])
+}
 var staticRenderFns = []
+render._withStripped = true
 
 
 

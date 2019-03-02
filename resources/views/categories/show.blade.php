@@ -8,7 +8,6 @@
         @foreach ($category->products->chunk(3) as $productsChunk)
             <div class="row" >
                 <!-- Use the 'chunks' then to fill in the template -->
-
                 @foreach ($productsChunk as $product)
                     <product-card :product="{{$product}}" ></product-card>
                 @endforeach
