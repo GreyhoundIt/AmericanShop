@@ -11,7 +11,7 @@
                  <p>{{product.description.substring(0,150) + "..."}}</p>
                  <div class='cta'>
                      <span class="price">{{formatPrice(product.price)}} </span><br>
-                     <a :href="`/products/${product.id}`" class="btn btn-primary pull-right" role="button">See More</a>
+                     <a :href="`/products/${product.slug}`" class="btn btn-primary pull-right" role="button">See More</a>
                  </div>
              </div>
          </div>

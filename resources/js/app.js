@@ -22,6 +22,7 @@ window.Vue = require('vue');
 
 Vue.component('product-card', require('./components/ProductCard.vue').default);
 Vue.component('product-detail', require('./components/ProductDetail.vue').default);
+Vue.component('related-products', require('./components/RelatedProducts.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

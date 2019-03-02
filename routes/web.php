@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('categories/{slug}', 'CategoriesController@show')->name('categories.show');
 Route::get('products/{id}', 'ProductsController@show')->name('products.show');
+Route::get('products/related/{id}', 'ProductsController@related')->name('products.related');
+

@@ -10684,6 +10684,11 @@ nav {
   margin-left: 10px;
 }
 
+.product-small-img {
+  width: 100px;
+  max-width: 100px;
+}
+
 .btn-form {
   margin-top: 20px;
 }
